@@ -1,7 +1,6 @@
 package net.yorksolutions.optumfs22teamintegerbe.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;

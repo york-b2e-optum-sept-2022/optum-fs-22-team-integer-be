@@ -22,7 +22,7 @@ public class ProductController {
     }
 
     @GetMapping
-    public Iterable<Product> getMemoList() {
+    public Iterable<Product> getCartList() {
         return this.productService.getAllProducts();
     }
 }
