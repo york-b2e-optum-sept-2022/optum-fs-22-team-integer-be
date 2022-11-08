@@ -1,5 +1,7 @@
 package net.yorksolutions.optumfs22teamintegerbe.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -14,6 +16,8 @@ public class Product {
     private String description;
     private String image; // url possibility vs. string?
     private Double quantityAtCost;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date dateAvailableOn;
 
     @ElementCollection
@@ -23,15 +27,24 @@ public class Product {
     private Boolean isDiscontinued;
     private Double storeQuantity;
     private Double msrp;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date mapStartDate;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date mapEndDate;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date priceStartDate;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date priceEndDate;
     private Double price;
     private Double currentPrice;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date saleStartDate;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date saleEndDate;
-    private Long salePercentOff;
+    private Double salePercentOff;
 
     public Product() {}
 
@@ -49,7 +62,7 @@ public class Product {
                    Double currentPrice,
                    Date saleStartDate,
                    Date saleEndDate,
-                   Long salePercentOff) {
+                   Double salePercentOff) {
         this.description = description;
         this.image = image;
         this.quantityAtCost = quantityAtCost;
@@ -201,11 +214,11 @@ public class Product {
         this.saleEndDate = saleEndDate;
     }
 
-    public Long getSalePercentOff() {
+    public Double getSalePercentOff() {
         return salePercentOff;
     }
 
-    public void setSalePercentOff(Long salePercentOff) {
+    public void setSalePercentOff(Double salePercentOff) {
         this.salePercentOff = salePercentOff;
     }
 }
