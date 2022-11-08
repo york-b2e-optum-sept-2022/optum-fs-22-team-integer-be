@@ -1,5 +1,6 @@
 package net.yorksolutions.optumfs22teamintegerbe.controller;
 
+import net.yorksolutions.optumfs22teamintegerbe.dto.NewProductRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Product;
 import net.yorksolutions.optumfs22teamintegerbe.service.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -16,5 +17,7 @@ public class ProductController {
     }
 
     @PostMapping
-    public Product create(@RequestBody NewProductRequestDTO productDTO)
+    public Product create(@RequestBody NewProductRequestDTO productRequestDTO) {
+        return this.productService.create(productRequestDTO);
+    }
 }
