@@ -37,4 +37,8 @@ public class ProductService {
                         dto.salePercentOff)
         );
     }
+
+    public Iterable<Product> getAllProducts() {
+        return productRepository.findAll();
+    }
 }

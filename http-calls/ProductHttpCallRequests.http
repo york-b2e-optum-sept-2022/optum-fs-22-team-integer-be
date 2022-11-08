@@ -1,9 +1,12 @@
 ###
+GET http://localhost:8080/api/products
+
+###
 POST http://localhost:8080/api/products
 Content-Type: application/json
 
 {
-  "description": "frying pan",
+  "description": "red frying pan",
   "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
   "quantityAtCost": 1,
 

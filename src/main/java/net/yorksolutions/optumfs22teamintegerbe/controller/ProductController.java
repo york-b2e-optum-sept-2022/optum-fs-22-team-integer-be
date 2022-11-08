@@ -20,4 +20,9 @@ public class ProductController {
     public Product create(@RequestBody NewProductRequestDTO productRequestDTO) {
         return this.productService.create(productRequestDTO);
     }
+
+    @GetMapping
+    public Iterable<Product> getMemoList() {
+        return this.productService.getAllProducts();
+    }
 }
