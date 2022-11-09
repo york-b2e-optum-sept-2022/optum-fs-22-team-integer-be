@@ -10,11 +10,11 @@ import java.util.Set;
 public class Invoice {
     @Id
     @GeneratedValue( strategy = GenerationType.SEQUENCE )
-    Long id;
+    public Long id;
     public Long accountId;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     public Date purchaseDate;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     public Set<PurchaseList> purchaseList;
     public Double totalPrice;
 }
