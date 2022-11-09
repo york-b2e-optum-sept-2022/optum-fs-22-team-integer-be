@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/api/invoices/1
+
+###
+GET http://localhost:8080/api/invoices
+
+###
+POST http://localhost:8080/api/invoices
+Content-Type: application/json
+
+{
+  "accountId": 1,
+  "purchaseDate": "11-11-2022",
+  "totalPrice": 20.00,
+  "purchaseList": [
+    {
+      "count": 2,
+      "name": "Spark Plug",
+      "price": 10.00
+    },
+    {
+      "count": 1,
+      "name": "Frisbee",
+      "price": 10.00
+    }
+  ]
+}
