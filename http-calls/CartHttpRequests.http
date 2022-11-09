@@ -1,0 +1,69 @@
+###
+PUT http://localhost:8080/api/carts
+Content-Type: application/json
+
+{
+  "id": 1,
+  "productList": [
+    {
+      "count": 1,
+      "product":
+      {
+        "id": 16
+      }
+    },
+    {
+      "count": 2,
+      "product":
+      {
+        "id": 14
+      }
+    }
+  ],
+  "totalPrice": 25.00
+}
+
+###
+### Set<ProductList>
+### Double
+POST http://localhost:8080/api/carts
+Content-Type: application/json
+
+{
+  "id": 1,
+  "productList": [
+    {
+      "count": 1,
+      "product":
+    {
+      "id": 14,
+      "description": "red frying pan",
+      "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+      "quantityAtCost": 1,
+
+      "dateAvailableOn": "11-11-2022",
+      "categoryList": ["kitchen"],
+      "isDiscontinued": false,
+
+      "storeQuantity": 100,
+      "msrp": 30.00,
+      "mapStartDate": "11-11-2022",
+
+      "mapEndDate": "11-11-2022",
+      "priceStartDate": "11-11-2022",
+      "priceEndDate": "11-11-2022",
+
+      "price": 28.00,
+      "currentPrice": 25.00,
+      "saleStartDate": "11-11-2022",
+
+      "saleEndDate": "11-11-2022",
+      "salePercentOff": 0.3
+    }
+    }
+  ],
+  "totalPrice": 25.00
+}
+
+###
+GET http://localhost:8080/api/carts/1

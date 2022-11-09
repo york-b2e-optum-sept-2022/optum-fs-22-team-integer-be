@@ -18,12 +18,17 @@ public class CartController {
     }
 
     @PostMapping
-    public Cart create(@RequestBody NewCartRequestDTO cartRequestDTO) {
-        return this.cartService.create(cartRequestDTO);
+    public Cart createCart(@RequestBody Cart cart) {
+        return this.cartService.create(cart);
+    }
+
+    @PutMapping
+    public Cart updateCart(@RequestBody Cart cart) {
+        return this.cartService.update(cart);
     }
 
     @GetMapping("/{cartId}")
-    public Cart getCartList(Long cartId) {
+    public Cart getCart(@PathVariable Long cartId) {
         return this.cartService.getCart(cartId);
     }
 

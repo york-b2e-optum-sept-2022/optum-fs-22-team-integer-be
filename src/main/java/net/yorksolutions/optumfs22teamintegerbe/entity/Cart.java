@@ -6,7 +6,6 @@ import java.util.Set;
 @Entity
 public class Cart {
     @Id
-    @GeneratedValue( strategy = GenerationType.SEQUENCE )
     private Long id;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
@@ -17,6 +16,10 @@ public class Cart {
     public Cart(Set<ProductList> productList, Double totalPrice) {
         this.productList = productList;
         this.totalPrice = totalPrice;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getId() {
