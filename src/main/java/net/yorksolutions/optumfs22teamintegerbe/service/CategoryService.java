@@ -21,6 +21,10 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
+    public Iterable<Category> getAllCategoies() {
+        return categoryRepository.findAll();
+    }
+
 
     //put methods here
 }

@@ -18,4 +18,8 @@ public class CategoryController {
 
     @PutMapping
     public Category updateCategory(@RequestBody Category category) { return this.categoryService.update(category);}
+
+    @GetMapping
+    public Iterable<Category> getAllCategoriesList() { return this.categoryService.getAllCategoies();}
+
 }
