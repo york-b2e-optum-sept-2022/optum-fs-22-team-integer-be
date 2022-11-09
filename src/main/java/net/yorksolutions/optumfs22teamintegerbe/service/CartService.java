@@ -13,12 +13,19 @@ public class CartService {
         this.cartRepository = cartRepository;
     }
 
-    public Cart create(NewCartRequestDTO dto) {
-        return this.cartRepository.save(
-                new Cart(dto.productList, dto.totalPrice));
+    public Cart create(Cart cart) {
+//        System.out.println(dto.productList);
+//        System.out.println(dto.totalPrice);
+//        return this.cartRepository.save(
+//                new Cart(dto.productList, dto.totalPrice));
+        return cartRepository.save(cart);
     }
 
-    public Cart getCart(Long accountId) {
-        return (this.cartRepository.findById(accountId)).get();
+    public Cart getCart(Long cartId) {
+        return (this.cartRepository.findById(cartId)).get();
+    }
+
+    public Cart update(Cart cart) {
+        return cartRepository.save(cart);
     }
 }
