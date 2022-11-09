@@ -15,6 +15,6 @@ public class Invoice {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     public Date purchaseDate;
     @OneToMany
-    Set<PurchaseList> purchaseList;
+    public Set<PurchaseList> purchaseList;
     public Double totalPrice;
 }
