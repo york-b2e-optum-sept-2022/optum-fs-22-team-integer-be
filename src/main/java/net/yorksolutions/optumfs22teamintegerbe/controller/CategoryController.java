@@ -11,7 +11,8 @@ public class CategoryController {
 
     CategoryService categoryService;
 
-    public CategoryController(CategoryService categoryService) { this.categoryService = categoryService; }
+    public CategoryController(CategoryService categoryService) {
+        this.categoryService = categoryService; }
 
     @PostMapping
     public Category createCategory(@RequestBody Category category) { return this.categoryService.create(category);}
