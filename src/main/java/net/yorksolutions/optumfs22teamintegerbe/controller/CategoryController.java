@@ -20,6 +20,6 @@ public class CategoryController {
     public Category updateCategory(@RequestBody Category category) { return this.categoryService.update(category);}
 
     @GetMapping
-    public Iterable<Category> getAllCategoriesList() { return this.categoryService.getAllCategoies();}
+    public Iterable<Category> getAllCategoriesList() { return this.categoryService.getAllCategories();}
 
 }
