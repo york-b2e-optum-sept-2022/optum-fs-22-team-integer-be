@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Categories {
+public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
@@ -14,9 +14,9 @@ public class Categories {
 
     private String name;
 
-    public Categories(){}
+    public Category(){}
 
-    public Categories(String name) {
+    public Category(String name) {
         this.name = name;
     }
 
