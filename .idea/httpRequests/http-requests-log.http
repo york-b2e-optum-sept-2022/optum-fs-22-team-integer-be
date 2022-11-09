@@ -1,0 +1,98 @@
+PUT http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "tableware"
+}
+
+<> 2022-11-09T134205.200.json
+
+###
+
+PUT http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "name": "apparel"
+}
+
+<> 2022-11-09T134109.200.json
+
+###
+
+POST http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "name": "kitchen"
+}
+
+<> 2022-11-09T133845.200.json
+
+###
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 100,
+  "msrp": 30.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 28.00,
+  "currentPrice": 25.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+}
+
+<> 2022-11-08T152404.200.json
+
+###
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 100,
+  "msrp": 30.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 28.00,
+  "currentPrice": 25.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+}
+
+<> 2022-11-08T151435.400.json
+
+###
+
