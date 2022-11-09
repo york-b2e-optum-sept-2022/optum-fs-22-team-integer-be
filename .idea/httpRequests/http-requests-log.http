@@ -1,3 +1,9 @@
+GET http://localhost:8080/api/category
+
+<> 2022-11-09T144006.200.json
+
+###
+
 PUT http://localhost:8080/api/category
 Content-Type: application/json
 
