@@ -1,0 +1,17 @@
+###
+PUT http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "tableware"
+}
+
+###
+POST http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "name": "kitchen"
+}
+

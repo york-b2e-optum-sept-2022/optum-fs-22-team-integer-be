@@ -1,544 +1,34 @@
-GET http://localhost:8080/api/invoices/1
-
-<> 2022-11-09T132104.200.json
-
-###
-
-GET http://localhost:8080/api/invoices
-
-<> 2022-11-09T132009.200.json
-
-###
-
-POST http://localhost:8080/api/invoices
+PUT http://localhost:8080/api/category
 Content-Type: application/json
 
 {
-  "accountId": 1,
-  "purchaseDate": "11-11-2022",
-  "totalPrice": 20.00,
-  "purchaseList": [
-    {
-      "count": 2,
-      "name": "Spark Plug",
-      "price": 10.00
-    },
-    {
-      "count": 1,
-      "name": "Frisbee",
-      "price": 10.00
-    }
-  ]
+  "id": 2,
+  "name": "tableware"
 }
 
-<> 2022-11-09T131920.200.json
+<> 2022-11-09T134205.200.json
 
 ###
 
-POST http://localhost:8080/api/invoices
+PUT http://localhost:8080/api/category
 Content-Type: application/json
 
 {
-  "cartId": 1,
-  "purchaseDate": "11-11-2022",
-  "totalPrice": 20.00,
-  "purchaseList": [
-    {
-      "count": 2,
-      "name": "Spark Plug",
-      "price": 10.00
-    },
-    {
-      "count": 1,
-      "name": "Frisbee",
-      "price": 10.00
-    }
-  ]
+  "name": "apparel"
 }
 
-<> 2022-11-09T131803.200.json
+<> 2022-11-09T134109.200.json
 
 ###
 
-POST http://localhost:8080/api/invoices
+POST http://localhost:8080/api/category
 Content-Type: application/json
 
 {
-  "cartId": 1,
-  "purchaseDate": "11-11-2022",
-  "totalPrice": 20.00,
-  "purchaseList": [
-    {
-      "count": 2,
-      "name": "Spark Plug",
-      "price": 10.00
-    },
-    {
-      "count": 1,
-      "name": "Frisbee",
-      "price": 10.00
-    }
-  ]
+  "name": "kitchen"
 }
 
-<> 2022-11-09T115715.200.json
-
-###
-
-GET http://localhost:8080/api/carts/1
-
-<> 2022-11-09T094719.200.json
-
-###
-
-GET http://localhost:8080/api/carts/3
-
-<> 2022-11-09T094708.500.json
-
-###
-
-PUT http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "id": 1,
-  "productList": [
-    {
-      "count": 1,
-      "product":
-      {
-        "id": 16
-      }
-    },
-    {
-      "count": 2,
-      "product":
-      {
-        "id": 14
-      }
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T094105.200.json
-
-###
-
-PUT http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "id": 1,
-  "productList": [
-    {
-      "count": 1,
-      "product":
-      {
-        "id": 16
-      }
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T093906.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "blue frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-09T093512.200.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "id": 1,
-  "productList": [
-    {
-      "count": 1,
-      "product":
-    {
-      "id": 14,
-      "description": "red frying pan",
-      "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-      "quantityAtCost": 1,
-
-      "dateAvailableOn": "11-11-2022",
-      "categoryList": ["kitchen"],
-      "isDiscontinued": false,
-
-      "storeQuantity": 100,
-      "msrp": 30.00,
-      "mapStartDate": "11-11-2022",
-
-      "mapEndDate": "11-11-2022",
-      "priceStartDate": "11-11-2022",
-      "priceEndDate": "11-11-2022",
-
-      "price": 28.00,
-      "currentPrice": 25.00,
-      "saleStartDate": "11-11-2022",
-
-      "saleEndDate": "11-11-2022",
-      "salePercentOff": 0.3
-    }
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T092741.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "red frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-09T092505.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "red frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-09T091927.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "red frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-09T091816.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "count": 1,
-      "product":
-    {
-      "description": "red frying pan",
-      "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-      "quantityAtCost": 1,
-
-      "dateAvailableOn": "11-11-2022",
-      "categoryList": ["kitchen"],
-      "isDiscontinued": false,
-
-      "storeQuantity": 100,
-      "msrp": 30.00,
-      "mapStartDate": "11-11-2022",
-
-      "mapEndDate": "11-11-2022",
-      "priceStartDate": "11-11-2022",
-      "priceEndDate": "11-11-2022",
-
-      "price": 28.00,
-      "currentPrice": 25.00,
-      "saleStartDate": "11-11-2022",
-
-      "saleEndDate": "11-11-2022",
-      "salePercentOff": 0.3
-    }
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T091217.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "id": 2,
-      "count": 1
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T081650.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "id": 2,
-      "count": 1
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T080334.500.json
-
-###
-
-GET http://localhost:8080/api/carts/3
-
-<> 2022-11-09T075528.200.json
-
-###
-
-GET http://localhost:8080/api/carts/1
-
-<> 2022-11-09T075454.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "id": 2,
-      "count": 1
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T075248.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "id": 2,
-      "count": 1
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T074756.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "id": 2,
-      "count": 1
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T074201.500.json
-
-###
-
-POST http://localhost:8080/api/carts
-Content-Type: application/json
-
-{
-  "productList": [
-    {
-      "description": "red frying pan",
-      "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-      "quantityAtCost": 1,
-
-      "dateAvailableOn": "11-11-2022",
-      "categoryList": ["kitchen"],
-      "isDiscontinued": false,
-
-      "storeQuantity": 100,
-      "msrp": 30.00,
-      "mapStartDate": "11-11-2022",
-
-      "mapEndDate": "11-11-2022",
-      "priceStartDate": "11-11-2022",
-      "priceEndDate": "11-11-2022",
-
-      "price": 28.00,
-      "currentPrice": 25.00,
-      "saleStartDate": "11-11-2022",
-
-      "saleEndDate": "11-11-2022",
-      "salePercentOff": 0.3
-    }
-  ],
-  "totalPrice": 25.00
-}
-
-<> 2022-11-09T073359.200.json
-
-###
-
-GET http://localhost:8080/api/carts/1
-
-<> 2022-11-09T072540.500.json
-
-###
-
-GET http://localhost:8080/api/products
-
-<> 2022-11-08T155422.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "red frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-08T155419.200.json
-
-###
-
-GET http://localhost:8080/api/products
-
-<> 2022-11-08T155347.200.json
+<> 2022-11-09T133845.200.json
 
 ###
 
@@ -570,7 +60,39 @@ Content-Type: application/json
   "salePercentOff": 0.3
 }
 
-<> 2022-11-08T154535.200.json
+<> 2022-11-08T152404.200.json
+
+###
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 100,
+  "msrp": 30.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 28.00,
+  "currentPrice": 25.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+}
+
+<> 2022-11-08T151435.400.json
 
 ###
 
