@@ -9,8 +9,8 @@ import javax.persistence.Id;
 public class PurchaseList {
     @Id
     @GeneratedValue( strategy = GenerationType.SEQUENCE )
-    private Long id;
-    private Long count;
-    private String name;
-    private Double price;
+    public Long id;
+    public Long count;
+    public String name;
+    public Double price;
 }
