@@ -15,4 +15,12 @@ public class InvoiceService {
     public Invoice create(Invoice invoice) {
         return invoiceRepository.save(invoice);
     }
+
+    public Iterable<Invoice> getAllInvoices() {
+        return invoiceRepository.findAll();
+    }
+
+    public Iterable<Invoice> getInvoicesByAccountId(Long accountId) {
+        return invoiceRepository.findAllByAccountId(accountId);
+    }
 }

@@ -11,10 +11,10 @@ public class Invoice {
     @Id
     @GeneratedValue( strategy = GenerationType.SEQUENCE )
     Long id;
-    Long accountId;
+    public Long accountId;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
-    Date purchaseDate;
+    public Date purchaseDate;
     @OneToMany
     Set<PurchaseList> purchaseList;
-    Double totalPrice;
+    public Double totalPrice;
 }

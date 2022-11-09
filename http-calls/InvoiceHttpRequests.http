@@ -1,9 +1,15 @@
 ###
+GET http://localhost:8080/api/invoices/1
+
+###
+GET http://localhost:8080/api/invoices
+
+###
 POST http://localhost:8080/api/invoices
 Content-Type: application/json
 
 {
-  "cartId": 1,
+  "accountId": 1,
   "purchaseDate": "11-11-2022",
   "totalPrice": 20.00,
   "purchaseList": [
