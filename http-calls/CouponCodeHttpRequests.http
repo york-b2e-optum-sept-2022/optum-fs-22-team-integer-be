@@ -1,0 +1,27 @@
+###
+GET http://localhost:8080/api/couponcode
+
+###
+POST http://localhost:8080/api/couponcode
+Content-Type: application/json
+
+{
+  "name": "Big Sale",
+  "startDate": "11-11-2022",
+  "endDate": "11-11-2022",
+  "useLimit": 100,
+  "storePercent": 25
+}
+
+###
+PUT http://localhost:8080/api/couponcode
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Sale",
+  "startDate": "11-11-2022",
+  "endDate": "11-11-2022",
+  "useLimit": 100,
+  "storePercent": 25
+}
