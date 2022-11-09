@@ -22,7 +22,6 @@ public class Product {
     @ElementCollection
     private List<String> categoryList;
 
-
     private Boolean isDiscontinued;
     private Double storeQuantity;
     private Double msrp;
