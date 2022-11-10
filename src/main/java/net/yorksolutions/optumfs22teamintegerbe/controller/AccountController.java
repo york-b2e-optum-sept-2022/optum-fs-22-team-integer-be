@@ -1,5 +1,6 @@
 package net.yorksolutions.optumfs22teamintegerbe.controller;
 
+import net.yorksolutions.optumfs22teamintegerbe.dto.UpdateAccountRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Account;
 import net.yorksolutions.optumfs22teamintegerbe.service.AccountService;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +25,19 @@ public class AccountController {
         return this.accountService.login(email, password);
     }
 
-    //GET http://localhost:8080/api/account?username=peter&password=pass&isEditor=false
+    @GetMapping("/ListAll")
+    public Iterable<Account> getAllAccountsList() {
+        return this.accountService.getAllAccounts();
+    }
+
+    @PutMapping
+    public Account updateAccount(@RequestBody UpdateAccountRequestDTO account) {
+        return this.accountService.update(account);
+    }
+
+    @DeleteMapping
+    public void deleteAccount(@RequestParam Long accountId) {
+        this.accountService.delete(accountId);
+    }
 
 }
