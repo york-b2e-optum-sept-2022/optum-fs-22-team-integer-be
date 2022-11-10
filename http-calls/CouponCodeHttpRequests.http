@@ -25,3 +25,6 @@ Content-Type: application/json
   "useLimit": 100,
   "storePercent": 25
 }
+
+###
+DELETE http://localhost:8080/api/couponcode/9

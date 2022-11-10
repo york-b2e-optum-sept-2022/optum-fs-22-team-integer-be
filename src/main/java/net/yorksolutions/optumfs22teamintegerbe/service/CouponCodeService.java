@@ -24,4 +24,8 @@ public class CouponCodeService {
     public Iterable<CouponCode> getAllCouponCodes() {
         return couponCodeRepository.findAll();
     }
+
+    public void delete(Long couponCodeId) {
+        couponCodeRepository.deleteById(couponCodeId);
+    }
 }

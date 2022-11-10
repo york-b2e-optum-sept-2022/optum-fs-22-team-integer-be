@@ -32,4 +32,11 @@ public class ProductController {
     public Product updateProduct(@RequestBody UpdateProductRequestDTO updateProductRequestDTO) {
         return this.productService.update(updateProductRequestDTO);
     }
+
+    @DeleteMapping("/{id}")
+
+    public void deleteProduct(@PathVariable Long id) {
+        this.productService.delete(id);
+    }
+
 }
