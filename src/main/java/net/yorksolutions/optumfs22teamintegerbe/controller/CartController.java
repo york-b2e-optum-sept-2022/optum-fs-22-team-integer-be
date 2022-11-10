@@ -1,9 +1,6 @@
 package net.yorksolutions.optumfs22teamintegerbe.controller;
 
-import net.yorksolutions.optumfs22teamintegerbe.dto.NewCartRequestDTO;
-import net.yorksolutions.optumfs22teamintegerbe.dto.NewProductRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Cart;
-
 import net.yorksolutions.optumfs22teamintegerbe.service.CartService;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,5 +28,11 @@ public class CartController {
     public Cart getCart(@PathVariable Long cartId) {
         return this.cartService.getCart(cartId);
     }
+
+    @DeleteMapping("/delete/{cartId}")
+    public void deleteCart(@PathVariable Long cartId) {
+        this.cartService.delete(cartId);
+    }
+
 
 }

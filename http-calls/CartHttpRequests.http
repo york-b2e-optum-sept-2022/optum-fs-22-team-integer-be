@@ -67,3 +67,7 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/api/carts/1
+
+
+###
+DELETE http://localhost:8080/api/carts/delete/1
