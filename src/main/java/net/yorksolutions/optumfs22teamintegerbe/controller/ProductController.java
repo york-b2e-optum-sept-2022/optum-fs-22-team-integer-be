@@ -1,6 +1,7 @@
 package net.yorksolutions.optumfs22teamintegerbe.controller;
 
 import net.yorksolutions.optumfs22teamintegerbe.dto.NewProductRequestDTO;
+import net.yorksolutions.optumfs22teamintegerbe.dto.UpdateProductRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Product;
 import net.yorksolutions.optumfs22teamintegerbe.service.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -24,5 +25,11 @@ public class ProductController {
     @GetMapping
     public Iterable<Product> getCartList() {
         return this.productService.getAllProducts();
+
+    }
+
+    @PutMapping
+    public Product updateProduct(@RequestBody UpdateProductRequestDTO updateProductRequestDTO) {
+        return this.productService.update(updateProductRequestDTO);
     }
 }
