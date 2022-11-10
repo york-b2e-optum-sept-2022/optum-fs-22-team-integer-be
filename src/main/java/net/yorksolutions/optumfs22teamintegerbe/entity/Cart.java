@@ -6,7 +6,8 @@ import java.util.Set;
 @Entity
 public class Cart {
     @Id
-    private Long id;
+    @Column(unique = true)
+    private Long accountId;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     Set<ProductList> productList;
@@ -18,12 +19,12 @@ public class Cart {
         this.totalPrice = totalPrice;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Long getAccountId() {
+        return accountId;
     }
 
-    public Long getId() {
-        return id;
+    public void setAccountId(Long accountId) {
+        this.accountId = accountId;
     }
 
     public Set<ProductList> getProductList() {

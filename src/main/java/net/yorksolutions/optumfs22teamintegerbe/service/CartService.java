@@ -3,7 +3,9 @@ package net.yorksolutions.optumfs22teamintegerbe.service;
 import net.yorksolutions.optumfs22teamintegerbe.dto.NewCartRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Cart;
 import net.yorksolutions.optumfs22teamintegerbe.repository.CartRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class CartService {
@@ -14,12 +16,13 @@ public class CartService {
     }
 
     public Cart create(Cart cart) {
-//        System.out.println(dto.productList);
-//        System.out.println(dto.totalPrice);
-//        return this.cartRepository.save(
-//                new Cart(dto.productList, dto.totalPrice));
-        return cartRepository.save(cart);
-    }
+            Boolean isExistingCart = this.cartRepository.existsById(cart.getAccountId());
+            if (isExistingCart) {
+                throw new ResponseStatusException(HttpStatus.CONFLICT);
+            }
+            return this.cartRepository.save(cart);
+        }
+
 
     public Cart getCart(Long cartId) {
         return (this.cartRepository.findById(cartId)).get();

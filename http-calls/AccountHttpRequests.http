@@ -1,5 +1,21 @@
 ###
-POST http://localhost:8080/api/Accounts?email=p@gmail.com&password=pass&type=0
+POST http://localhost:8080/api/Accounts?email=t@pmail.com&password=pass&type=1
 
 ###
-GET http://localhost:8080/api/Accounts?email=p@gmail.com&password=pass
+GET http://localhost:8080/api/Accounts?email=t@pmail.com&password=pass2
+
+###
+GET http://localhost:8080/api/Accounts/ListAll
+
+###
+PUT http://localhost:8080/api/Accounts
+Content-Type: application/json
+
+{
+  "id": 28,
+  "password": "pass2",
+  "type": 2
+}
+
+###
+DELETE http://localhost:8080/api/Accounts?accountId=23

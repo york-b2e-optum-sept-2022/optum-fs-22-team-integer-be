@@ -3,7 +3,7 @@ PUT http://localhost:8080/api/carts
 Content-Type: application/json
 
 {
-  "id": 1,
+  "accountId": 1,
   "productList": [
     {
       "count": 1,
@@ -30,14 +30,14 @@ POST http://localhost:8080/api/carts
 Content-Type: application/json
 
 {
-  "id": 1,
+  "accountId": 2,
   "productList": [
     {
       "count": 1,
       "product":
     {
-      "id": 14,
-      "description": "red frying pan",
+      "id": 42,
+      "description": "blue frying pan",
       "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
       "quantityAtCost": 1,
 

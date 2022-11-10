@@ -1,5 +1,6 @@
 package net.yorksolutions.optumfs22teamintegerbe.service;
 
+import net.yorksolutions.optumfs22teamintegerbe.dto.UpdateAccountRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Account;
 import net.yorksolutions.optumfs22teamintegerbe.repository.AccountRepository;
 import org.springframework.http.HttpStatus;
@@ -36,4 +37,23 @@ public class AccountService {
         return accountOpt.get();
     }
 
+    public Iterable<Account> getAllAccounts() {
+        return accountRepository.findAll();
+    }
+
+
+    public Account update(UpdateAccountRequestDTO account) {
+        Optional<Account> accountOpt = this.accountRepository.findById(account.id);
+        if (accountOpt.isEmpty()) {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
+        Account currentAccount = accountOpt.get();
+        currentAccount.setType(account.type);
+        currentAccount.setPassword(account.password);
+        return accountRepository.save(currentAccount);
+    }
+
+    public void delete(Long accountId) {
+        accountRepository.deleteById(accountId);
+    }
 }
