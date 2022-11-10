@@ -6,7 +6,7 @@ import net.yorksolutions.optumfs22teamintegerbe.service.AccountService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/Accounts")
+@RequestMapping("/api/accounts")
 @CrossOrigin
 public class AccountController {
     AccountService accountService;

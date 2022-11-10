@@ -1,14 +1,14 @@
 ###
-POST http://localhost:8080/api/Accounts?email=t@pmail.com&password=pass&type=1
+POST http://localhost:8080/api/accounts?email=t@pmail.com&password=pass&type=1
 
 ###
-GET http://localhost:8080/api/Accounts?email=t@pmail.com&password=pass2
+GET http://localhost:8080/api/accounts?email=t@pmail.com&password=pass2
 
 ###
-GET http://localhost:8080/api/Accounts/ListAll
+GET http://localhost:8080/api/accounts/ListAll
 
 ###
-PUT http://localhost:8080/api/Accounts
+PUT http://localhost:8080/api/accounts
 Content-Type: application/json
 
 {
@@ -18,4 +18,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/api/Accounts?accountId=23
+DELETE http://localhost:8080/api/accounts?accountId=23
