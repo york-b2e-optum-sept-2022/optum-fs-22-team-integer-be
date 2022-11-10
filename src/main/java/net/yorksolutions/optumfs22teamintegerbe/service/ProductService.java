@@ -41,4 +41,6 @@ public class ProductService {
     public Iterable<Product> getAllProducts() {
         return productRepository.findAll();
     }
+
+    public Product update(Product product) { return productRepository.save(product); }
 }

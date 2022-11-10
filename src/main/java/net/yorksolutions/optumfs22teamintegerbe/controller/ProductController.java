@@ -24,5 +24,11 @@ public class ProductController {
     @GetMapping
     public Iterable<Product> getCartList() {
         return this.productService.getAllProducts();
+
+    }
+
+    @PutMapping
+    public Product updateCart(@RequestBody Product product) {
+        return this.productService.update(product);
     }
 }
