@@ -27,4 +27,10 @@ public class CouponCodeController {
 
     @GetMapping
     public Iterable<CouponCode> getAllCouponCodes() { return this.couponCodeService.getAllCouponCodes();}
+
+    @DeleteMapping("/{id}")
+    public void deleteCouponCode(@PathVariable Long id) {
+        this.couponCodeService.delete(id);
+    }
+
 }
