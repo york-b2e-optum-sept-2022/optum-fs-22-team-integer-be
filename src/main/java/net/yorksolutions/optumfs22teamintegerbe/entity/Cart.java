@@ -6,6 +6,7 @@ import java.util.Set;
 @Entity
 public class Cart {
     @Id
+    @Column(unique = true)
     private Long id;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)

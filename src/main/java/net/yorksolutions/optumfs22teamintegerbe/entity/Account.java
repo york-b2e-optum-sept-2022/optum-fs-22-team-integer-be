@@ -13,6 +13,7 @@ public class Account {
     private String email;
     @JsonIgnore
     private String password;
+
     private int type;
 
     public Account(){}
@@ -23,8 +24,16 @@ public class Account {
         this.type = type;
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getEmail() {
         return email;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setEmail(String email) {
