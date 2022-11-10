@@ -1,12 +1,13 @@
 package net.yorksolutions.optumfs22teamintegerbe.controller;
 
+import net.yorksolutions.optumfs22teamintegerbe.dto.NewAccountRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.dto.UpdateAccountRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Account;
 import net.yorksolutions.optumfs22teamintegerbe.service.AccountService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/Accounts")
+@RequestMapping("/api/accounts")
 @CrossOrigin
 public class AccountController {
     AccountService accountService;
@@ -16,8 +17,8 @@ public class AccountController {
     }
 
     @PostMapping
-    public Account register(@RequestParam String email, String password, int type) {
-        return this.accountService.register(email, password, type);
+    public Account register(@RequestBody NewAccountRequestDTO accountDTO) {
+        return this.accountService.register(accountDTO);
     }
 
     @GetMapping
