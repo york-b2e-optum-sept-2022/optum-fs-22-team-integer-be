@@ -1,5 +1,14 @@
 ###
-POST http://localhost:8080/api/accounts?email=t@pmail.com&password=pass&type=1
+###POST http://localhost:8080/api/accounts?email=t@pmail.com&password=pass&type=1
+###
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "email": "e@comcast.net",
+  "password": "pass2",
+  "type": 2
+}
 
 ###
 GET http://localhost:8080/api/accounts?email=t@pmail.com&password=pass2

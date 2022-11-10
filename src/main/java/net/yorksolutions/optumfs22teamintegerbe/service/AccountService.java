@@ -1,5 +1,6 @@
 package net.yorksolutions.optumfs22teamintegerbe.service;
 
+import net.yorksolutions.optumfs22teamintegerbe.dto.NewAccountRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.dto.UpdateAccountRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Account;
 import net.yorksolutions.optumfs22teamintegerbe.repository.AccountRepository;
@@ -19,10 +20,10 @@ public class AccountService {
     }
 
 
-    public Account register(String email, String password, int type) {
+    public Account register(NewAccountRequestDTO accountDTO) {
         try {
             return this.accountRepository.save(
-                    new Account(email, password, type));
+                    new Account(accountDTO.email,accountDTO.password, accountDTO.type));
         } catch (RuntimeException exception) {
             throw new ResponseStatusException(HttpStatus.CONFLICT);
         }
