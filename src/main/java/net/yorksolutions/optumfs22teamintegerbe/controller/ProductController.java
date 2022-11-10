@@ -6,6 +6,8 @@ import net.yorksolutions.optumfs22teamintegerbe.entity.Product;
 import net.yorksolutions.optumfs22teamintegerbe.service.ProductService;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/products")
 @CrossOrigin
@@ -20,6 +22,11 @@ public class ProductController {
     @PostMapping
     public Product create(@RequestBody NewProductRequestDTO productRequestDTO) {
         return this.productService.create(productRequestDTO);
+    }
+
+    @PostMapping("/addList")
+    public Iterable<Product> create(@RequestBody List<NewProductRequestDTO> productList ) {
+        return this.productService.addCreateList(productList);
     }
 
     @GetMapping
