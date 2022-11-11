@@ -10,7 +10,7 @@ Content-Type: application/json
 
 {
   "accountId": 1,
-  "purchaseDate": "11-11-2022",
+  "purchaseDate": "11-11-2022", <===== will not work NOW Date object
   "totalPrice": 20.00,
   "purchaseList": [
     {
