@@ -5,9 +5,9 @@ POST http://localhost:8080/api/accounts
 Content-Type: application/json
 
 {
-  "email": "e@comcast.net",
-  "password": "pass2",
-  "type": 2
+  "email": "admin",
+  "password": "admin",
+  "type": 3
 }
 
 ###

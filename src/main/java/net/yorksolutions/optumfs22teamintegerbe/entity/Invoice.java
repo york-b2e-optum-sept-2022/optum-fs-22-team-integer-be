@@ -12,7 +12,7 @@ public class Invoice {
     @GeneratedValue( strategy = GenerationType.SEQUENCE )
     public Long id;
     public Long accountId;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
+//  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     public Date purchaseDate;
     @OneToMany(cascade = CascadeType.ALL)
     public Set<PurchaseList> purchaseList;
