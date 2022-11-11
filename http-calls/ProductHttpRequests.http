@@ -1,5 +1,5 @@
 ###
-DELETE http://localhost:8080/api/products/17
+DELETE http://localhost:8080/api/products/58
 
 ###
 GET http://localhost:8080/api/products
@@ -9,30 +9,29 @@ POST http://localhost:8080/api/products
 Content-Type: application/json
 
 {
-  "description": "blue frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "description": "t-shirt",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
   "quantityAtCost": 1,
 
   "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
+  "categoryList": ["mens-clothing"],
   "isDiscontinued": false,
 
-  "storeQuantity": 100,
-  "msrp": 30.00,
+  "storeQuantity": 15,
+  "msrp": 20.00,
   "mapStartDate": "11-11-2022",
 
   "mapEndDate": "11-11-2022",
   "priceStartDate": "11-11-2022",
   "priceEndDate": "11-11-2022",
 
-  "price": 28.00,
-  "currentPrice": 25.00,
+  "price": 18.00,
+  "currentPrice": 9.00,
   "saleStartDate": "11-11-2022",
 
   "saleEndDate": "11-11-2022",
   "salePercentOff": 0.3
 }
-
 ###
 PUT http://localhost:8080/api/products
 Content-Type: application/json
@@ -166,7 +165,7 @@ Content-Type: application/json
   },
   {
     "description": "t-shirt",
-    "image": "https://cdn.clothingshoponline.com/Images/Color/17075_f_fm.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
     "quantityAtCost": 1,
 
     "dateAvailableOn": "11-11-2022",
