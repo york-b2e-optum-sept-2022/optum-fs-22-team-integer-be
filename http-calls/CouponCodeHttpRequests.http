@@ -6,9 +6,9 @@ POST http://localhost:8080/api/couponcode
 Content-Type: application/json
 
 {
-  "name": "Big Sale",
-  "startDate": "11-11-2022",
-  "endDate": "11-11-2022",
+  "name": "discount",
+  "startDate": null,
+  "endDate": null,
   "useLimit": 100,
   "storePercent": 25
 }
