@@ -13,30 +13,25 @@ public class CouponCode {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
     private String name;
-
 //  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date startDate;
-
 //  @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     private Date endDate;
-
     private Long useLimit;
-    private Long storePercent;
-
+    private Long salePercent;
     public CouponCode() {}
 
     public CouponCode(String name,
                       Date startDate,
                       Date endDate,
                       Long useLimit,
-                      Long storePercent) {
+                      Long salePercent) {
         this.name = name;
         this.startDate = startDate;
         this.endDate = endDate;
         this.useLimit = useLimit;
-        this.storePercent = storePercent;
+        this.salePercent = salePercent;
     }
 
     public Long getId() {
@@ -75,11 +70,11 @@ public class CouponCode {
         this.useLimit = useLimit;
     }
 
-    public Long getStorePercent() {
-        return storePercent;
+    public Long getSalePercent() {
+        return salePercent;
     }
 
-    public void setStorePercent(Long storePercent) {
-        this.storePercent = storePercent;
+    public void setSalePercent(Long salePercent) {
+        this.salePercent = salePercent;
     }
 }

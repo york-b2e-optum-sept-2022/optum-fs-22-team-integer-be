@@ -10,7 +10,7 @@ Content-Type: application/json
   "startDate": null,
   "endDate": null,
   "useLimit": 100,
-  "storePercent": 25
+  "salePercent": 25
 }
 
 ###
@@ -23,7 +23,7 @@ Content-Type: application/json
   "startDate": "11-11-2022",
   "endDate": "11-11-2022",
   "useLimit": 100,
-  "storePercent": 25
+  "salePercent": 25
 }
 
 ###
