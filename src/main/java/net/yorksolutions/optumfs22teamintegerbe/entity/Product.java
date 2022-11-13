@@ -122,12 +122,12 @@ public class Product {
         this.categoryList = categoryList;
     }
 
-    public Boolean getDiscontinued() {
+    public Boolean getIsDiscontinued() {
         return isDiscontinued;
     }
 
-    public void setDiscontinued(Boolean discontinued) {
-        isDiscontinued = discontinued;
+    public void setIsDiscontinued(Boolean isDiscontinued) {
+        this.isDiscontinued = isDiscontinued;
     }
 
     public Double getStoreQuantity() {
