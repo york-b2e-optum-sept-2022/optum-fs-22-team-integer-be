@@ -24,26 +24,7 @@ public class ProductService {
 
 
         return this.productRepository.save(product);
-//                new Product(
-//                        dto.description,
-//                        dto.image,
-////                        dto.quantityAtCost,
-//                        dto.dateAvailableOn,
-////                        dto.categoryList,
-////                        dto.isDiscontinued,
-//                        dto.storeQuantity,
-////                        dto.msrp,
-////                        dto.mapStartDate,
-////                        dto.mapEndDate,
-////                        dto.priceStartDate,
-////                        dto.priceEndDate,
-////                        dto.price,
-//                        dto.currentPrice
-////                        dto.saleStartDate,
-////                        dto.saleEndDate,
-////                        dto.salePercentOff
-//                )
-//        );
+
     }
 
     public Iterable<Product> getAllProducts() {
@@ -52,26 +33,7 @@ public class ProductService {
 
 
     public Product update(Product product) {
-//        Product updatedProduct = new Product(
-//                dto.description,
-//                dto.image,
-//                dto.quantityAtCost,
-//                dto.dateAvailableOn,
-//                dto.categoryList,
-//                dto.isDiscontinued,
-//                dto.storeQuantity,
-//                dto.msrp,
-//                dto.mapStartDate,
-//                dto.mapEndDate,
-//                dto.priceStartDate,
-//                dto.priceEndDate,
-//                dto.price,
-//                dto.currentPrice,
-//                dto.saleStartDate,
-//                dto.saleEndDate,
-//                dto.salePercentOff);
-
-//        updatedProduct.setId(dto.id);
+//
 
         return this.productRepository.save(product);
     }
