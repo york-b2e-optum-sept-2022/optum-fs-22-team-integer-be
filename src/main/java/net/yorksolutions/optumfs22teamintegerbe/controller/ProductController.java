@@ -2,6 +2,7 @@ package net.yorksolutions.optumfs22teamintegerbe.controller;
 
 import net.yorksolutions.optumfs22teamintegerbe.dto.NewProductRequestDTO;
 import net.yorksolutions.optumfs22teamintegerbe.dto.UpdateProductRequestDTO;
+import net.yorksolutions.optumfs22teamintegerbe.entity.Cart;
 import net.yorksolutions.optumfs22teamintegerbe.entity.Product;
 import net.yorksolutions.optumfs22teamintegerbe.service.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -20,8 +21,8 @@ public class ProductController {
     }
 
     @PostMapping
-    public Product create(@RequestBody NewProductRequestDTO productRequestDTO) {
-        return this.productService.create(productRequestDTO);
+    public Product create(@RequestBody Product product) {
+        return this.productService.create(product);
     }
 
     @PostMapping("/addList")
@@ -36,8 +37,8 @@ public class ProductController {
     }
 
     @PutMapping
-    public Product updateProduct(@RequestBody UpdateProductRequestDTO updateProductRequestDTO) {
-        return this.productService.update(updateProductRequestDTO);
+    public Product updateProduct(@RequestBody Product product) {
+        return this.productService.update(product);
     }
 
     @DeleteMapping("/{id}")

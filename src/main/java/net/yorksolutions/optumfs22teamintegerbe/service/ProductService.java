@@ -18,28 +18,32 @@ public class ProductService {
         this.productRepository = productRepository;
     }
 
-    public Product create(NewProductRequestDTO dto) {
+    public Product create(Product product) {
+        Product newProduct = new Product();
+        newProduct = product;
 
-        return this.productRepository.save(
-                new Product(
-                        dto.description,
-                        dto.image,
-                        dto.quantityAtCost,
-                        dto.dateAvailableOn,
-                        dto.categoryList,
-                        dto.isDiscontinued,
-                        dto.storeQuantity,
-                        dto.msrp,
-                        dto.mapStartDate,
-                        dto.mapEndDate,
-                        dto.priceStartDate,
-                        dto.priceEndDate,
-                        dto.price,
-                        dto.currentPrice,
-                        dto.saleStartDate,
-                        dto.saleEndDate,
-                        dto.salePercentOff)
-        );
+
+        return this.productRepository.save(product);
+//                new Product(
+//                        dto.description,
+//                        dto.image,
+////                        dto.quantityAtCost,
+//                        dto.dateAvailableOn,
+////                        dto.categoryList,
+////                        dto.isDiscontinued,
+//                        dto.storeQuantity,
+////                        dto.msrp,
+////                        dto.mapStartDate,
+////                        dto.mapEndDate,
+////                        dto.priceStartDate,
+////                        dto.priceEndDate,
+////                        dto.price,
+//                        dto.currentPrice
+////                        dto.saleStartDate,
+////                        dto.saleEndDate,
+////                        dto.salePercentOff
+//                )
+//        );
     }
 
     public Iterable<Product> getAllProducts() {
@@ -47,38 +51,38 @@ public class ProductService {
     }
 
 
-    public Product update(UpdateProductRequestDTO dto) {
-        Product updatedProduct =  new Product(
-                dto.description,
-                dto.image,
-                dto.quantityAtCost,
-                dto.dateAvailableOn,
-                dto.categoryList,
-                dto.isDiscontinued,
-                dto.storeQuantity,
-                dto.msrp,
-                dto.mapStartDate,
-                dto.mapEndDate,
-                dto.priceStartDate,
-                dto.priceEndDate,
-                dto.price,
-                dto.currentPrice,
-                dto.saleStartDate,
-                dto.saleEndDate,
-                dto.salePercentOff);
+    public Product update(Product product) {
+//        Product updatedProduct = new Product(
+//                dto.description,
+//                dto.image,
+//                dto.quantityAtCost,
+//                dto.dateAvailableOn,
+//                dto.categoryList,
+//                dto.isDiscontinued,
+//                dto.storeQuantity,
+//                dto.msrp,
+//                dto.mapStartDate,
+//                dto.mapEndDate,
+//                dto.priceStartDate,
+//                dto.priceEndDate,
+//                dto.price,
+//                dto.currentPrice,
+//                dto.saleStartDate,
+//                dto.saleEndDate,
+//                dto.salePercentOff);
 
-        updatedProduct.setId(dto.id);
+//        updatedProduct.setId(dto.id);
 
-        return this.productRepository.save(updatedProduct);
+        return this.productRepository.save(product);
     }
 
     public void delete(Long productId) {
-            productRepository.deleteById(productId);
+        productRepository.deleteById(productId);
     }
 
     public Iterable<Product> addCreateList(List<NewProductRequestDTO> productList) {
         //loop
-        for(NewProductRequestDTO dto : productList){
+        for (NewProductRequestDTO dto : productList) {
             this.productRepository.save(
                     new Product(
                             dto.description,
@@ -97,7 +101,7 @@ public class ProductService {
                             dto.currentPrice,
                             dto.saleStartDate,
                             dto.saleEndDate,
-                            dto.salePercentOff)   );
+                            dto.salePercentOff));
         }
         Iterator productIterable = productList.stream().iterator();
         return convertIterableFromIterator(productIterable);
