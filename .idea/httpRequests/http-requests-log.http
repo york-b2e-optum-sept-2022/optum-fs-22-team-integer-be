@@ -1,3 +1,1033 @@
+POST http://localhost:8080/api/products/addList
+Content-Type: application/json
+
+[
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": null,
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 10,
+  "msrp": 15.00,
+  "mapStartDate": null,
+
+  "mapEndDate": null,
+  "priceStartDate": null,
+  "priceEndDate": null,
+
+  "price": 12.00,
+  "currentPrice": 12.00,
+  "saleStartDate": null,
+
+  "saleEndDate": null,
+  "salePercentOff": 0.3
+},
+{
+    "description": "football",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Xu5RR2-OL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["sporting-goods"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 10,
+    "msrp": 30.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 28.00,
+    "currentPrice": 25.00,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "phone",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71TwVjAbelL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["electronics"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 20,
+    "msrp": 500.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 499.00,
+    "currentPrice": 399.00,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "spark plug",
+    "image": "https://i.ebayimg.com/thumbs/images/g/KvcAAOSwRv5jKiS4/s-l200.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["automotive"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 70,
+    "msrp": 22.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 20.00,
+    "currentPrice": 19.50,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "t-shirt",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["mens-clothing"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 15,
+    "msrp": 20.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 18.00,
+    "currentPrice": 9.00,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "frisbee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81TqzZwfn+L._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["toys"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 25,
+    "msrp": 10.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 9.00,
+    "currentPrice": 4.50,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  }
+]
+
+<> 2022-11-13T205940.200.json
+
+###
+
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "description": "BLACK t-shirt",
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": null,
+  "categoryList": ["mens-clothing"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 15,
+  "msrp": 20.00,
+  "mapStartDate": null,
+
+  "mapEndDate": null,
+  "priceStartDate": null,
+  "priceEndDate": null,
+
+  "price": 18.00,
+  "currentPrice": 9.00,
+  "saleStartDate": null,
+
+  "saleEndDate": null,
+  "salePercentOff": 0.3
+}
+
+<> 2022-11-13T205829.200.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin",
+  "type": 3
+}
+
+<> 2022-11-13T205823.200.json
+
+###
+
+PUT http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "id": 3,
+  "name": "electronics"
+}
+
+<> 2022-11-12T184615.200.json
+
+###
+
+PUT http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "tableware"
+}
+
+<> 2022-11-12T184535.200.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin",
+  "type": 3
+}
+
+<> 2022-11-12T164815.200.json
+
+###
+
+POST http://localhost:8080/api/products/addList
+Content-Type: application/json
+
+[
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": null,
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 10,
+  "msrp": 15.00,
+  "mapStartDate": null,
+
+  "mapEndDate": null,
+  "priceStartDate": null,
+  "priceEndDate": null,
+
+  "price": 12.00,
+  "currentPrice": 12.00,
+  "saleStartDate": null,
+
+  "saleEndDate": null,
+  "salePercentOff": 0.3
+},
+{
+    "description": "football",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Xu5RR2-OL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["sporting-goods"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 10,
+    "msrp": 30.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 28.00,
+    "currentPrice": 25.00,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "phone",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71TwVjAbelL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["electronics"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 20,
+    "msrp": 500.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 499.00,
+    "currentPrice": 399.00,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "spark plug",
+    "image": "https://i.ebayimg.com/thumbs/images/g/KvcAAOSwRv5jKiS4/s-l200.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["automotive"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 70,
+    "msrp": 22.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 20.00,
+    "currentPrice": 19.50,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "t-shirt",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["mens-clothing"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 15,
+    "msrp": 20.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 18.00,
+    "currentPrice": 9.00,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "frisbee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81TqzZwfn+L._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": null,
+    "categoryList": ["toys"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 25,
+    "msrp": 10.00,
+    "mapStartDate": null,
+
+    "mapEndDate": null,
+    "priceStartDate": null,
+    "priceEndDate": null,
+
+    "price": 9.00,
+    "currentPrice": 4.50,
+    "saleStartDate": null,
+
+    "saleEndDate": null,
+    "salePercentOff": 0.3
+  }
+]
+
+<> 2022-11-12T164805.200.json
+
+###
+
+POST http://localhost:8080/api/category
+Content-Type: application/json
+
+{
+  "name": "kitchen"
+}
+
+<> 2022-11-11T154837.200.json
+
+###
+
+POST http://localhost:8080/api/accounts
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "password": "admin",
+  "type": 3
+}
+
+<> 2022-11-11T115059.200.json
+
+###
+
+POST http://localhost:8080/api/products/addList
+Content-Type: application/json
+
+[
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 10,
+  "msrp": 15.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 12.00,
+  "currentPrice": 12.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+},
+{
+    "description": "football",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Xu5RR2-OL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["sporting-goods"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 10,
+    "msrp": 30.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 28.00,
+    "currentPrice": 25.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "phone",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71TwVjAbelL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["electronics"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 20,
+    "msrp": 500.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 499.00,
+    "currentPrice": 399.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "spark plug",
+    "image": "https://i.ebayimg.com/thumbs/images/g/KvcAAOSwRv5jKiS4/s-l200.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["automotive"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 70,
+    "msrp": 22.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 20.00,
+    "currentPrice": 19.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "t-shirt",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["mens-clothing"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 15,
+    "msrp": 20.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 18.00,
+    "currentPrice": 9.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "frisbee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81TqzZwfn+L._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["toys"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 25,
+    "msrp": 10.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 9.00,
+    "currentPrice": 4.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  }
+]
+
+<> 2022-11-11T103000.200.json
+
+###
+
+POST http://localhost:8080/api/products/addList
+Content-Type: application/json
+
+[
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 10,
+  "msrp": 15.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 12.00,
+  "currentPrice": 12.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+},
+{
+    "description": "football",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Xu5RR2-OL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["sporting-goods"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 10,
+    "msrp": 30.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 28.00,
+    "currentPrice": 25.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "phone",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71TwVjAbelL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["electronics"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 20,
+    "msrp": 500.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 499.00,
+    "currentPrice": 399.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "spark plug",
+    "image": "https://i.ebayimg.com/thumbs/images/g/KvcAAOSwRv5jKiS4/s-l200.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["automotive"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 70,
+    "msrp": 22.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 20.00,
+    "currentPrice": 19.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "t-shirt",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYHP37slIhAIVelzpl8YOABqP7OnxOhmEC9U-nXtjeDyxlWOJwslWtm9DAleiiUaipnn0&usqp=CAU",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["mens-clothing"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 15,
+    "msrp": 20.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 18.00,
+    "currentPrice": 9.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "frisbee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81TqzZwfn+L._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["toys"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 25,
+    "msrp": 10.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 9.00,
+    "currentPrice": 4.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  }
+]
+
+<> 2022-11-11T101157.200.json
+
+###
+
+POST http://localhost:8080/api/products/addList
+Content-Type: application/json
+
+[
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 10,
+  "msrp": 15.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 12.00,
+  "currentPrice": 12.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+},
+{
+    "description": "football",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Xu5RR2-OL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["sporting-goods"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 10,
+    "msrp": 30.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 28.00,
+    "currentPrice": 25.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "phone",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71TwVjAbelL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["electronics"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 20,
+    "msrp": 500.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 499.00,
+    "currentPrice": 399.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "spark plug",
+    "image": "https://i.ebayimg.com/thumbs/images/g/KvcAAOSwRv5jKiS4/s-l200.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["automotive"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 70,
+    "msrp": 22.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 20.00,
+    "currentPrice": 19.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "t-shirt",
+    "image": "https://cdn.clothingshoponline.com/Images/Color/17075_f_fm.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["mens-clothing"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 15,
+    "msrp": 20.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 18.00,
+    "currentPrice": 9.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "frisbee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81TqzZwfn+L._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["toys"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 25,
+    "msrp": 10.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 9.00,
+    "currentPrice": 4.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  }
+]
+
+<> 2022-11-10T165947.200.json
+
+###
+
+POST http://localhost:8080/api/products/addList
+Content-Type: application/json
+
+[
+{
+  "description": "frying pan",
+  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
+  "quantityAtCost": 1,
+
+  "dateAvailableOn": "11-11-2022",
+  "categoryList": ["kitchen"],
+  "isDiscontinued": false,
+
+  "storeQuantity": 10,
+  "msrp": 15.00,
+  "mapStartDate": "11-11-2022",
+
+  "mapEndDate": "11-11-2022",
+  "priceStartDate": "11-11-2022",
+  "priceEndDate": "11-11-2022",
+
+  "price": 12.00,
+  "currentPrice": 12.00,
+  "saleStartDate": "11-11-2022",
+
+  "saleEndDate": "11-11-2022",
+  "salePercentOff": 0.3
+},
+{
+    "description": "football",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81Xu5RR2-OL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["sporting-goods"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 10,
+    "msrp": 30.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 28.00,
+    "currentPrice": 25.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "phone",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71TwVjAbelL._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["electronics"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 20,
+    "msrp": 500.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 499.00,
+    "currentPrice": 399.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "spark plug",
+    "image": "https://i.ebayimg.com/thumbs/images/g/KvcAAOSwRv5jKiS4/s-l200.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["automotive"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 70,
+    "msrp": 22.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 20.00,
+    "currentPrice": 19.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "t-shirt",
+    "image": "https://cdn.clothingshoponline.com/Images/Color/17075_f_fm.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["mens-clothing"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 15,
+    "msrp": 20.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 18.00,
+    "currentPrice": 9.00,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  },
+  {
+    "description": "frisbee",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81TqzZwfn+L._AC_UL200_SR200,200_.jpg",
+    "quantityAtCost": 1,
+
+    "dateAvailableOn": "11-11-2022",
+    "categoryList": ["toys"],
+    "isDiscontinued": false,
+
+    "storeQuantity": 25,
+    "msrp": 10.00,
+    "mapStartDate": "11-11-2022",
+
+    "mapEndDate": "11-11-2022",
+    "priceStartDate": "11-11-2022",
+    "priceEndDate": "11-11-2022",
+
+    "price": 9.00,
+    "currentPrice": 4.50,
+    "saleStartDate": "11-11-2022",
+
+    "saleEndDate": "11-11-2022",
+    "salePercentOff": 0.3
+  }
+]
+
+<> 2022-11-10T165907.405.json
+
+###
+
 POST http://localhost:8080/api/carts
 Content-Type: application/json
 
@@ -965,122 +1995,6 @@ Content-Type: application/json
 }
 
 <> 2022-11-10T072530.500.json
-
-###
-
-GET http://localhost:8080/api/Accounts/ListAll
-
-<> 2022-11-10T071833.200.json
-
-###
-
-POST http://localhost:8080/api/Accounts?email=t@gmail.com&password=pass&type=1
-
-<> 2022-11-10T071826.200.json
-
-###
-
-GET http://localhost:8080/api/category
-
-<> 2022-11-09T144006.200.json
-
-###
-
-PUT http://localhost:8080/api/category
-Content-Type: application/json
-
-{
-  "id": 2,
-  "name": "tableware"
-}
-
-<> 2022-11-09T134205.200.json
-
-###
-
-PUT http://localhost:8080/api/category
-Content-Type: application/json
-
-{
-  "name": "apparel"
-}
-
-<> 2022-11-09T134109.200.json
-
-###
-
-POST http://localhost:8080/api/category
-Content-Type: application/json
-
-{
-  "name": "kitchen"
-}
-
-<> 2022-11-09T133845.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-08T152404.200.json
-
-###
-
-POST http://localhost:8080/api/products
-Content-Type: application/json
-
-{
-  "description": "frying pan",
-  "image": "https://functionjunction.com/wp-content/uploads/2021/04/m_3778-200x200.jpg",
-  "quantityAtCost": 1,
-
-  "dateAvailableOn": "11-11-2022",
-  "categoryList": ["kitchen"],
-  "isDiscontinued": false,
-
-  "storeQuantity": 100,
-  "msrp": 30.00,
-  "mapStartDate": "11-11-2022",
-
-  "mapEndDate": "11-11-2022",
-  "priceStartDate": "11-11-2022",
-  "priceEndDate": "11-11-2022",
-
-  "price": 28.00,
-  "currentPrice": 25.00,
-  "saleStartDate": "11-11-2022",
-
-  "saleEndDate": "11-11-2022",
-  "salePercentOff": 0.3
-}
-
-<> 2022-11-08T151435.400.json
 
 ###
 
